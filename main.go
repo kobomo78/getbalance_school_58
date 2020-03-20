@@ -123,7 +123,7 @@ func GetBalance(cardNumber string, base_type bool) string {
 
 	balance := re.Find(body)
 
-	re = regexp.MustCompile(`[0-9]+\.?[0-9]*`)
+	re = regexp.MustCompile(`-?[0-9]+\.?[0-9]*`)
 
 	balance = re.Find(balance)
 
